@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<style>
+#table1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:100%;
+  height:400px;
+  text-align: center;
+}
+td,th{
+    border: 1px solid black;
+    height:70px;
+  border-collapse: collapse;
+
+}
+#table2{
+    border: 1px solid white;
+    width:120px;
+    text-align: center;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+.control-me:after,.control1-me:after,.control2-me:after,.control3-me:after,.control4-me:after,.control5-me:after,.control6-me:after,.control7-me:after
+ {
+    content: '\2605';
+    font-size: 40px;
+    color:lightgray;
+}
+
+#toggle:checked ~ .control-me:after,#toggle1:checked ~ .control1-me:after,#toggle2:checked ~ .control2-me:after,#toggle3:checked ~ .control3-me:after,#toggle4:checked ~ .control4-me:after,#toggle5:checked ~ .control5-me:after,#toggle6:checked ~ .control6-me:after ,#toggle7:checked ~ .control7-me:after
+{
+    content: '\2605';
+    color:yellow;
+}
+
+a:link,a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    left: -50vw;
+    
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+#bottomLine{
+padding: 70px;
+  
+}
+</style>
+<head>
+
+</head>
+
+<body>
+    <table id="table1">
+        <tr id="id1">
+          <td style="width:20%; height:10px">LOGO</td>
+          <td colspan=2 style="width:70%">NAVIGATION<br><a href> HOME </a>|<a href> LINK </a>|<a href> LINK </a>|<a href> LINK </a>|<a href> LINK </a></td>
+
+        </tr>
+        <tr>
+            <td colspan="2" style=" height:5px;">PROJECT PROGRESS</td>
+            <td style="width:30%">MY BADGES</td>
+            
+        </tr>
+        <tr>
+            <td rowspan=5 colspan="2">MAIN CONTENT GOES HERE</td>
+            <td>
+                <table style="font-size:200%;">
+                    <tr ">
+                        <td id="table2">
+
+                            <label for="toggle">
+        
+                            <input type="checkbox" id="toggle" class="visually-hidden">
+                        
+                            <div class="control-me"></div>
+                            </label>
+
+                        </td>
+                        <td id="table2" ><label for="toggle1">
+        
+                            <input type="checkbox" id="toggle1" class="visually-hidden">
+                        
+                            <div class="control1-me"></div></td>
+                        <td id="table2"><label for="toggle2">
+        
+                            <input type="checkbox" id="toggle2" class="visually-hidden">
+                        
+                            <div class="control2-me"></div></td>
+                        <td id="table2"><label for="toggle3">
+        
+                            <input type="checkbox" id="toggle3" class="visually-hidden">
+                        
+                            <div class="control3-me"></div></td>
+                    </tr>
+                    <tr >
+                        <td id="table2">
+
+                            <label for="toggle4">
+        
+                            <input type="checkbox" id="toggle4" class="visually-hidden">
+                        
+                            <div class="control4-me"></div>
+                            </label>
+
+                        </td>
+                        <td id="table2" ><label for="toggle5">
+        
+                            <input type="checkbox" id="toggle5" class="visually-hidden">
+                        
+                            <div class="control5-me"></div></td>
+                        <td id="table2"><label for="toggle6">
+        
+                            <input type="checkbox" id="toggle6" class="visually-hidden">
+                        
+                            <div class="control6-me"></div></td>
+                        <td id="table2"><label for="toggle7">
+        
+                            <input type="checkbox" id="toggle7" class="visually-hidden">
+                        
+                            <div class="control7-me"></div></td>
+                    </tr>
+                </table>
+
+
+            </td>
+            
+            
+        </tr>
+
+
+        <tr>
+            <td>ACTIVITY ONE</td>
+            
+        </tr>
+        <tr>
+            <td>ACTIVITY TWO</td>
+            
+        </tr>
+        <tr>
+            <td>ACTIVITY THREE</td>
+           
+        </tr>
+        <tr>
+            <td>ACTIVITY FOUR</td>
+           
+        </tr>
+        <tr  >
+            <td colspan='2'id="bottomLine">DISCUSSION</td>
+            <td id="bottomLine">POLL</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
